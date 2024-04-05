@@ -1,0 +1,446 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #1b1b1b;
+  padding:1px;
+  color:#f8f8f8;
+}
+
+.navbar {
+  position:sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1b1b1b;
+  color: #f8f8f8;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+/*HEADER*/
+.header {
+  background-image: url('/imgs/portada2.jpg');
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  padding: 65px;
+  height: 600px; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  position: absolute;
+  text-align: left;
+  color: #fff;
+}
+
+.header-title {
+  color: #FEC904;
+  font-style: italic;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  max-width: 50%;
+  background-color: none;
+}
+
+.contact-button {
+  background-color: #FF0101;
+  color: #f8f8f8;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*CONTACS & LOCATIOM*/
+
+.section-title {
+  font-size: 3.5rem;
+  color: #FEC904;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px; }
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 20px; 
+  padding: 30px;
+}
+
+.contact-info-container, .map-frame-container {
+  flex: 1; 
+  min-width: 300px; 
+}
+
+.map-frame-container {
+  height: 500px; 
+  background-color: #eee; 
+  
+}
+
+.contact-title{
+  font-size: 2.4rem;
+  color: #FEC904;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-weight: 700;
+  max-width: 70%;
+}
+
+.contact-info {
+  flex: 1; 
+  text-align: left;
+  color: #f8f8f8;
+  float: left;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.icon-info {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-container {
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: none;
+  padding:5px;
+  font-weight: 400;
+}
+
+.contact-container{
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+/*OUR PIZZAS*/
+.our-pizzas {
+
+  padding: 65px;
+  text-align: center;
+  background-color: none;
+}
+
+.menu-image {
+  width: 100%;
+  height: 750px;
+  display:inline-block;
+  background-image: url('/imgs/menu1.2.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+/*PROMOTIONS*/
+.our-promotions {
+  background-color: none;
+  padding: 65px;
+  text-align: center;
+}
+
+.promotion-images-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.promotion-image {
+  flex: 0 0 500px; 
+  margin-right: -50px; 
+}
+
+.promotion-image:last-child {
+  margin-right: 0; 
+}
+
+/*ABOUT US*/
+.about-us {
+  background-color: none; 
+  padding: 65px;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex-basis: 50%;
+  padding-right: 20px;
+  text-align: left;
+  color: #f8f8f8;
+  float: left;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.about-video {
+  height: auto;
+  flex-basis: 50%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.about-video video {
+  width: 100%;
+  height: 600px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 65px;
+  color: #1b1b1b;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex-basis: calc(100% / 3);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-image {
+  position: relative;
+}
+
+.footer-image img {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 100%;
+  height: auto;
+}
+
+.image-credits {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  color: #1b1b1b;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+/*MAP CSS*/
+.mapWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar{
+    padding: 20px 20px;
+  }
+  .header {
+    background-size:auto;
+    background-position: center;
+    position: relative;
+  }
+
+  .header-title {
+    font-size: 2.8rem;
+    max-width: 80%; 
+    padding: 0px;
+  }
+
+  .contact-button {
+    padding: 10px; 
+    font-size: 1.4rem; 
+  }
+
+  /*CONTACT IN MOBILE SCREEN*/
+
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #FEC904;
+    font-style: italic;
+    font-weight: 700;
+  }
+  
+  
+  /*OUR PIZZAS*/
+  .our-pizzas {
+    padding: 30px;
+    text-align: center;
+    background-color: none;
+  }
+
+  .menu-image {
+    padding:20px;
+    width: 100%;
+    height: 500px;
+    background-image: url('/imgs/menu1.2.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+
+  /*PROMOTIONS*/
+  .our-promotions {
+    background-color: none;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .promotion-images-container {
+    margin-top: 90px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promotion-image {
+    flex: 0 0 ; 
+    margin-right: 0px; 
+    width: 100%;
+    max-width: 500px;
+  }
+  .promotion-image:last-child {
+    margin-right: 0;
+    margin-top: 30px;
+  }
+
+  /*ABOUT US MOBILE SCREEN*/
+  .about-us {
+    background-color: none; 
+    padding: 65px;
+    text-align: center;
+  }
+
+  .about-container {
+  flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    background-color: none;
+    text-align: left;
+    color: #f8f8f8;
+    float: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .about-video {
+    height: auto;
+    flex-basis: 50%;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .about-video video {
+    width: 100%;
+    height: 600px;
+  }
+
+  /*FOOTER*/
+
+  /* FOOTER */
+  .footer {
+    padding: 20px;
+    color: #1b1b1b;
+  }
+
+  .footer-container {
+    font-size: 0.6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex-basis: calc(100% / 3);
+    padding: 5px;
+    text-align: center;
+  }
+
+  .footer-image {
+    position: relative;
+  }
+
+  .footer-image img {
+    display: block;
+    margin: 10px ; /* Center horizontally */
+    
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-credits {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-weight: 400;
+    color: #1b1b1b;
+    font-size: 0.5rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 0px;
+
+  }
+}
