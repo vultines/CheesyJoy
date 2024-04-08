@@ -46,12 +46,15 @@ export default function Home() {
             <div className={montserrat.className}>
               <h2 className="contact-title">¡Realiza tu pedido!</h2>
             </div>
-            <div className="icon-container">
-              <Image src="/icons/WhatsApp.png" alt="WhatsApp Logo" width={40} height={40} />
-              <div className={opensans.className}>
-              <p>+591 77440815</p>
-            </div>
-            </div>
+            <a href="https://wa.me/59177440815" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="icon-container">
+                <Image src="/icons/WhatsApp.png" alt="WhatsApp Logo" width={40} height={40} />
+                  <div className={opensans.className}>
+                  <p>+591 77440815</p>
+                </div>
+              </div>
+            </a>
+            
            
 
             <br></br>
@@ -60,27 +63,35 @@ export default function Home() {
               <h2 className="contact-title">¡Siguenos en nuestras redes sociales!</h2>
             </div>
 
+            <a href="https://www.instagram.com/cheesyjoypizzeria" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="icon-container">
               <Image src="/icons/Instagram.png" alt="Instagram Logo" width={40} height={40} />
               <div className={opensans.className}>
                 <p>cheesyjoypizzeria</p>
               </div>
             </div>
+          </a>
+            
            
-
+          <a href="https://www.facebook.com/profile.php?id=61557413852568" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="icon-container">
               <Image src="/icons/Facebook.png" alt="Facebook Logo" width={40} height={40} />
               <div className={opensans.className}>
                 <p>Cheesy Joy</p>
               </div>
             </div>
+           </a>
             
-            <div className="icon-container">
-              <Image src="/icons/TikTok.png" alt="TikTok Logo" width={40} height={40} />
-              <div className={opensans.className}>
-                <p>cheesyjoy.pizzeria</p>
+        
+            <a href="https://www.tiktok.com/@cheesyjoy.pizzeria" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="icon-container">
+                <Image src="/icons/TikTok.png" alt="TikTok Logo" width={40} height={40} />
+                <div className={opensans.className}>
+                  <p>cheesyjoy.pizzeria</p>
+                </div>
               </div>
-            </div>
+            </a>
+            
           </div>
           <div className="map-frame-container">
             <Map />
