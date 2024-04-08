@@ -176,12 +176,12 @@ body{
 
 .promotion-images-container {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-evenly; 
 }
 
 .promotion-image {
   flex: 0 0 500px; 
-  margin-right: -50px; 
+  margin-right: -100px; 
 }
 
 .promotion-image:last-child {
@@ -287,32 +287,53 @@ body{
 @media only screen and (max-width: 768px) {
   .navbar{
     padding: 20px 20px;
+    font-size: 1rem;
   }
+  .links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 0.9rem;
+  }
+
   .header {
     background-size:auto;
     background-position: center;
     position: relative;
+    padding: 30px;
   }
 
   .header-title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     max-width: 80%; 
     padding: 0px;
+    text-align: left;
   }
 
   .contact-button {
     padding: 10px; 
-    font-size: 1.4rem; 
+    font-size: 1.2rem; 
   }
 
   /*CONTACT IN MOBILE SCREEN*/
 
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: #FEC904;
     font-style: italic;
     font-weight: 700;
+  }
+  .contact-container{
+    padding: 10px;
+  }
+  .contact-title{
+    font-size: 1.5rem;
+  }
+  .icon-container{
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   
   
